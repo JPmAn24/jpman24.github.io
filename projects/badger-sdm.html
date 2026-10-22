@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>European Badger Species Distribution Modeling</title>
+
+		<link rel="stylesheet" href="../css/styles.css">
+	</head>
+
+	<body>
+
+		<button
+			class="theme-toggle"
+			onclick="toggleTheme()">
+			🌓 Theme
+		</button>
+
+		<div class="container">
+
+			<h1 class="hero-name">
+				European Badger Species Distribution Modeling
+			</h1>
+
+			<div class="project-section">
+
+				<h2>Project Overview</h2>
+
+				<p>
+					This project developed a species distribution model
+					for the European Badger across the Iberian Peninsula
+					using environmental and climatic variables within
+					ArcGIS Pro.
+				</p>
+
+				<p>
+					The goal was to identify environmental characteristics
+					associated with suitable habitat and generate a
+					map predicting the probability of species occurrence.
+				</p>
+
+			</div>
+
+			<div class="project-section">
+
+				<h2>Problem</h2>
+
+				<p>
+					Conservation planning and wildlife management
+					require understanding where species are most likely
+					to occur.
+				</p>
+
+				<p>
+					The challenge was to combine multiple environmental
+					datasets with species observations to create a
+					reliable habitat suitability model.
+				</p>
+
+			</div>
+
+			<div class="project-section">
+
+				<h2>Data Used</h2>
+
+				<ul>
+					<li>European Badger occurrence records</li>
+					<li>Elevation data</li>
+					<li>Slope raster</li>
+					<li>Land cover data</li>
+					<li>Bioclimatic variables</li>
+					<li>Presence and absence sample locations</li>
+				</ul>
+
+			</div>
+
+			<div class="project-section">
+
+				<h2>What I Did</h2>
+
+				<ul>
+					<li>
+						Created presence and absence sample points
+						throughout the Iberian Peninsula.
+					</li>
+
+					<li>
+						Collected environmental and climatic
+						datasets relevant to habitat suitability.
+					</li>
+
+					<li>
+						Extracted raster values to sample
+						locations for model training.
+					</li>
+
+					<li>
+						Developed a Random Forest classification
+						model in ArcGIS Pro.
+					</li>
+
+					<li>
+						Evaluated predictor importance and refined
+						the model by removing less influential variables.
+					</li>
+
+					<li>
+						Generated a continuous habitat suitability map.
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="project-section">
+
+				<h2>What I Found</h2>
+
+				<p>
+					The final Random Forest model achieved a
+					validation accuracy of 77 percent.
+				</p>
+
+				<p>
+					Temperature- and precipitation-related variables,
+					elevation, and land cover emerged as some of
+					the most important predictors of habitat suitability.
+				</p>
+
+				<p>
+					The resulting habitat suitability map identified
+					regions across Spain and Portugal that were most
+					likely to support European Badger populations.
+				</p>
+
+			</div>
+
+			<div class="project-section">
+
+				<h2>Skills Demonstrated</h2>
+
+				<ul>
+					<li>ArcGIS Pro</li>
+					<li>Species Distribution Modeling</li>
+					<li>Random Forest Modeling</li>
+					<li>Raster Analysis</li>
+					<li>Environmental GIS</li>
+					<li>Habitat Suitability Mapping</li>
+					<li>Spatial Data Science</li>
+				</ul>
+
+			</div>
+
+			<div class="project-section">
+
+				<h2>What I Would Do Differently</h2>
+
+				<p>
+					Future iterations could incorporate higher
+					resolution environmental datasets, additional
+					species observations, and temporal climate data.
+				</p>
+
+				<p>
+					I would also explore alternative machine learning
+					algorithms and comparative model evaluation
+					techniques to determine whether prediction
+					performance could be improved further.
+				</p>
+
+			</div>
+<div class="project-section">
+
+	<h2>Project Gallery</h2>
+
+	<p>
+		Habitat suitability maps and model outputs
+		from this project.
+	</p>
+
+	<div class="gallery-grid">
+
+		<img
+			src="../assets/badger/image1.png"
+			alt="Badger Project Image 1"
+			class="gallery-image">
+
+		<img
+			src="../assets/badger/image2.png"
+			alt="Badger Project Image 2"
+			class="gallery-image">
+
+		<img
+			src="../assets/badger/image3.png"
+			alt="Badger Project Image 3"
+			class="gallery-image">
+
+	</div>
+
+</div>
+			<p>
+				<a class="button" href="../index.html">
+					← Back to Portfolio
+				</a>
+			</p>
+
+		</div>
+
+		<script src="../js/theme.js"></script>
+
+	</body>
+</html>

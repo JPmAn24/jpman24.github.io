@@ -1,110 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joel Arndt — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Joel Arndt | GIS Portfolio</title>
+
+	<link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-  <header class="hero">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#gis">GIS</a>
-      <a href="#photography">Photography</a>
-      <a href="#resume">Resume</a>
-    </nav>
-    <div class="hero-content">
-      <h1>Joel Arndt</h1>
-      <p class="tagline">GIS Analyst &amp; Photographer</p>
-    </div>
-  </header>
+	<button
+		class="theme-toggle"
+		onclick="toggleTheme()">
+		🌓 Theme
+	</button>
 
-  <main>
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        I am a GIS Analyst and photographer. I pride myself in keeping
-	a deep technical knowledge of everything I do, and this has
-	helped me to continuously refine my skills in both areas. I run
-	a film development lab in my apartment in my free time, and I
-	currently work as a part-time photographer for Texas A&M University
-	Division of Student Affairs Department of Marketing and Communications.
-      </p>
-    </section>
+	<header class="hero">
 
-    <!-- GIS PORTFOLIO -->
-    <section id="gis" class="section">
-      <h2>GIS Portfolio</h2>
-      <p class="section-intro">Selected mapping and spatial analysis projects.</p>
-      <div class="grid">
+		<h1 class="hero-name">
+			Joel Arndt
+		</h1>
 
-        <article class="card">
-          <img src="assets/gis/project1.png" alt="Map thumbnail">
-          <div class="card-body">
-            <h3>Project Title</h3>
-            <p>One or two sentences: the question, the data, the tools
-               (e.g., ArcGIS Pro, QGIS, Python).</p>
-            <a href="#" class="btn-link">View project →</a>
-          </div>
-        </article>
+		<p class="subtitle">
+			GIS Student | Spatial Analysis |
+			Remote Sensing | Geospatial Modeling
+		</p>
 
-        <article class="card">
-          <img src="assets/gis/project2.png" alt="Map thumbnail">
-          <div class="card-body">
-            <h3>Project Title</h3>
-            <p>One or two sentences describing the project.</p>
-            <a href="#" class="btn-link">View project →</a>
-          </div>
-        </article>
+	</header>
 
-        <article class="card">
-          <img src="assets/gis/project3.png" alt="Map thumbnail">
-          <div class="card-body">
-            <h3>Project Title</h3>
-            <p>One or two sentences describing the project.</p>
-            <a href="#" class="btn-link">View project →</a>
-          </div>
-        </article>
+	<div class="container">
 
-      </div>
-    </section>
+		<section>
 
-    <!-- PHOTOGRAPHY PORTFOLIO -->
-    <section id="photography" class="section">
-      <h2>Photography Portfolio</h2>
-      <p class="section-intro">A selection of my favorite shots.</p>
-      <div class="gallery">
-        <img src="assets/photos/photo1.jpg" alt="Photograph">
-        <img src="assets/photos/photo2.jpg" alt="Photograph">
-        <img src="assets/photos/photo3.jpg" alt="Photograph">
-        <img src="assets/photos/photo4.jpg" alt="Photograph">
-        <img src="assets/photos/photo5.jpg" alt="Photograph">
-        <img src="assets/photos/photo6.jpg" alt="Photograph">
-      </div>
-    </section>
+			<h2>About</h2>
 
-    <!-- RESUME -->
-    <section id="resume" class="section resume-section">
-      <h2>Resume</h2>
-      <p>Download a copy of my current resume below.</p>
-      <a href="assets/resume.pdf" class="btn" download>Download Resume (PDF)</a>
-    </section>
-  </main>
+			<p>
+				I am a GIS student with experience
+				using ArcGIS Pro for terrain
+				analysis, LiDAR processing,
+				remote sensing, machine learning,
+				and environmental modeling. I also
+				do photography as a hobby and have
+				experience developing film.
+			</p>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Your Name ·
-       <a href="mailto:joelarndt24@gmail.com">joelarndt24@gmail.com</a> ·
-       <a href="https://github.com/jpman24">GitHub</a> ·
-       <a href="https://linkedin.com/in/joel-arndt-651090">LinkedIn</a>
-    </p>
-  </footer>
+		</section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+		<section>
+
+			<h2>Projects</h2>
+
+			<div class="project-grid">
+
+				<a
+					class="project-card"
+					href="projects/lidar-analysis.html">
+
+					<h3>
+						LiDAR Terrain Analysis
+					</h3>
+
+					<p>
+						Classified point clouds and
+						generated terrain products.
+					</p>
+
+				</a>
+
+				<a
+					class="project-card"
+					href="projects/geomorphon-analysis.html">
+
+					<h3>
+						Geomorphon Classification
+					</h3>
+
+					<p>
+						Automated terrain feature
+						identification in Idaho.
+					</p>
+
+				</a>
+
+				<a
+					class="project-card"
+					href="projects/badger-sdm.html">
+
+					<h3>
+						Species Distribution Modeling
+					</h3>
+
+					<p>
+						Random Forest habitat
+						prediction for European Badgers.
+					</p>
+
+				</a>
+
+			</div>
+
+		</section>
+
+		<section>
+
+			<h2>Resume</h2>
+
+			<div class="resume-box">
+				Add resume content or
+				embed a PDF here.
+			</div>
+
+		</section>
+
+		<section>
+
+			<h2>Contact</h2>
+
+			<a href="mailto:joelarndt24@gmail.com">joelarndt24@gmail.com</a> ·
+       			<a href="https://github.com/jpman24">GitHub</a> ·
+       			<a href="https://linkedin.com/in/joel-arndt-651090">LinkedIn</a>
+
+		</section>
+
+	</div>
+
+	<footer>
+		© Joel Arndt
+	</footer>
+
+	<script src="js/theme.js"></script>
 
 </body>
 </html>
