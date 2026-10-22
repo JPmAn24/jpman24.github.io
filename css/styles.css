@@ -1,20 +1,21 @@
 :root {
+
 	--tamu-maroon: #500000;
 	--tamu-maroon-light: #7a0019;
-	--cream: #f7f3eb;
+
+	--tamu-gold: #d6a461;
 
 	--bg: #faf8f5;
 	--card: #ffffff;
 	--text: #222222;
 	--border: #d6d0c4;
-
-	--shadow: 0 10px 25px rgba(0,0,0,.1);
 }
 
 [data-theme="dark"] {
-	--bg: #151515;
-	--card: #222222;
-	--text: #f0f0f0;
+
+	--bg: #121212;
+	--card: #1f1f1f;
+	--text: #f5f5f5;
 	--border: #383838;
 }
 
@@ -43,23 +44,29 @@ body {
 }
 
 .hero {
+	background: linear-gradient(
+		135deg,
+		#500000,
+		#7a0019
+	);
+
+	color: white;
+
 	text-align: center;
-	padding: 5rem 1rem 3rem;
+
+	padding: 5rem 1rem 4rem;
 }
 
 .hero-name {
 	font-size: clamp(3rem, 8vw, 6rem);
+
 	font-weight: 800;
 
-	background: linear-gradient(
-		135deg,
-		var(--tamu-maroon),
-		var(--tamu-maroon-light)
-	);
+	color: white;
 
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+	background: none;
+
+	-webkit-text-fill-color: white;
 }
 
 .subtitle {
@@ -77,7 +84,7 @@ h2 {
 }
 
 [data-theme="dark"] h2 {
-	color: #d6a46a;
+	color: var(--tamu-gold);
 }
 
 .project-grid {
@@ -87,18 +94,22 @@ h2 {
 }
 
 .project-card {
-	display: block;
-	text-decoration: none;
-	color: white;
 
-	padding: 1.5rem;
-	border-radius: 18px;
+	display: block;
 
 	background: linear-gradient(
 		135deg,
-		var(--tamu-maroon),
-		var(--tamu-maroon-light)
+		#500000,
+		#7a0019
 	);
+
+	color: white;
+
+	padding: 1.5rem;
+
+	border-radius: 18px;
+
+	text-decoration: none;
 
 	box-shadow: var(--shadow);
 
@@ -114,20 +125,25 @@ h2 {
 }
 
 .project-section {
+
 	background: var(--card);
-	border: 1px solid var(--border);
+
+	border-left: 5px solid var(--tamu-gold);
+
 	border-radius: 16px;
+
 	padding: 1.5rem;
-	margin-bottom: 1.5rem;
+
 	box-shadow: var(--shadow);
 }
 
 a {
 	color: var(--tamu-maroon);
+	font-weight: 600;
 }
 
 [data-theme="dark"] a {
-	color: #d6a46a;
+	color: var(--tamu-gold);
 }
 
 .button,
@@ -182,4 +198,21 @@ footer {
 
 .gallery-image:hover {
 	transform: translateY(-4px);
+}
+.project-hero {
+	background: linear-gradient(
+		135deg,
+		#500000,
+		#7a0019
+	);
+
+	padding: 4rem 2rem;
+	border-radius: 0 0 20px 20px;
+	margin-bottom: 2rem;
+}
+
+.project-hero h1 {
+	color: white;
+	font-size: clamp(2.5rem, 5vw, 4rem);
+	margin: 0;
 }
